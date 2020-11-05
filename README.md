@@ -12,12 +12,13 @@ In the first case the car enrollment process is opened. In the second case a use
   IF I WANT TO RENT A CAR:
   
   I have to fill in the required form fields on several steps:
-    0. Select city.
-    1. Selec available car from the list,
-    2. Fill in user profile form (first name, last name, email, tel, personal Id number, check to agree to terms) 
-    3. Select the date range they want to rent a car (from, to)
-    4. Checkout step Stripe form to pay amount of money based on number of days user selected 
-    
+  
+  0. Select city.
+  1. Selec available car from the list.
+  2. Fill in user profile form (first name, last name, email, tel, personal Id number, check to agree to terms).
+  3. Select the date range they want to rent a car (from, to).
+  4. Checkout step Stripe form to pay amount of money based on number of days user selected.
+
     
  After selecting a car the car may no be unavailable on date range selected e.g some one else has booked the car earlier. This logic shall be taken into account.
  The booking span shall not be more than 3 months.
