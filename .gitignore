@@ -34,4 +34,5 @@ webstorm.webpack.config.js
 *.sublime-workspace
 *.swo
 .idea/inspectionProfiles/Project_Default.xml
+
 .idea/vcs.xml
