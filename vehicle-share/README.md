@@ -1,4 +1,4 @@
-# share-vehicle
+# vehicle-share
 
 ## Project setup
 ```
