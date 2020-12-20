@@ -10,8 +10,9 @@ export type vehicleType = {[key in VehicleTypes]: string}
 export interface IVehicle {
   id: string;
   type: vehicleType; //automobile, motorcycle, truck etc
-  make: string; // marka avto eg bmv, renault etc
+  make: string; // marka auto eg bmv, renault etc
   model: string;
+  images?: string[];
 }
 
 export interface IVehicleState {

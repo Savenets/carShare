@@ -1,8 +1,8 @@
 import { ActionTree } from 'vuex';
 import { IRootState } from '@/models/rootState'
 import vehicleService from '@/services/vehicleService'
-import { IVehicleState, IVehicle } from '@/models/vehicleTypes';
-import { NotificationTypes } from '@/models/notificationTypes';
+import { IVehicleState, IVehicle } from '@/models/vehicleTypes'
+import { NotificationTypes } from '@/models/notificationTypes'
 
 export const namespaced = true
 
@@ -35,7 +35,7 @@ export const actions: ActionTree<IVehicleState, IRootState> = {
         commit('SET_VEHICLE', vehicle)
         const notification = {
           type: NotificationTypes.success,
-          message: 'Your' + vehicle.type + '--has been created!'
+          message: 'Your' + vehicle.type + 'has been created!'
         };
         dispatch('notification/add', notification, { root: true })
       })

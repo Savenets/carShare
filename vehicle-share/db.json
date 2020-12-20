@@ -1,0 +1,60 @@
+{
+  "vehicles": [
+    {
+      "id": 1,
+      "type": "automobile",
+      "make": "Honda",
+      "model": "Civic",
+      "images": ["images/big_1058civic_blue_-_2.jpg","images/big_civic_blue_-_3.jpg","images/big_civic_blue_-_6.jpg"]
+    },
+    {
+      "id": 2,
+      "type": "automobile",
+      "make": "Volkswagen",
+      "model": "Polo",
+      "images": ["images/big_991polo-2013-6.jpg","images/big_polo-2013-7.jpg","images/big_polo-2013-8.jpg"]
+    },
+    {
+      "id": 3,
+      "type": "automobile",
+      "make": "Honda",
+      "model": "Accord",
+      "images": ["images/big_1630honda-accord-2016-4.jpg","images/big_honda-accord-2016-5.jpg","images/honda-accord-2016-4.jpg"]
+    },
+    {
+      "id": 4,
+      "type": "automobile",
+      "make": "Toyota",
+      "model": "Camry",
+      "images": ["images/big_camry-xv-60-7.jpg","images/big_camry-xv-60-12.jpg","images/camry-xv-60-10.jpg"]
+    },
+    {
+      "id": 5,
+      "type": "automobile",
+      "make": "BMW",
+      "model": "D320",
+      "images": ["images/bmw-320-2.jpg","images/big_bmw-320-3.jpg","images/big_bmw-320-6.jpg"]
+    },
+    {
+      "id": 6,
+      "type": "automobile",
+      "make": "Ford",
+      "model": "Focus",
+      "images": ["images/ford-focus-2018-7.jpg","images/big_ford-focus-2018-2.jpg","images/big_ford-focus-2018-3.jpg"]
+    },
+    {
+      "id": 7,
+      "type": "automobile",
+      "make": "Kia",
+      "model": "Rio",
+      "images": ["images/kia-rio-3.jpg","images/big_kia-rio-4.jpg","images/big_kia-rio-5.jpg"]
+    },
+    {
+      "id": 7,
+      "type": "automobile",
+      "make": "Hyundai",
+      "model": "Elantra",
+      "images": ["images/elantra_limited_-_6.jpg","iimages/big_elantra_limited_-_4.jpg","images/big_elantra_limited_-_5.jpg"]
+    }
+  ]
+}
