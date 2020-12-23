@@ -23,6 +23,11 @@ export default new Router({
           import(/* webpackChunkName: "about" */ '../views/About.vue')
     },
     {
+      path: '/vehicles',
+      name: 'vehicles',
+      component: () => import('../views/Vehicles.vue')
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('../views/Login.vue')
@@ -39,3 +44,5 @@ export default new Router({
     }
   ]
 })
+
+// Vehicles
