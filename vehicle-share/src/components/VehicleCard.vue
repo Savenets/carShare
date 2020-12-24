@@ -22,27 +22,32 @@
         </v-carousel-item>
       </v-carousel>
       <div class="wrapper">
-        <p class="description">Car type: <span class="descriptionValue">{{vehicle.type}}</span></p>
-        <p class="description">Make: <span class="descriptionValue">{{vehicle.make}}</span></p>
-        <p class="description">Model: <span class="descriptionValue">{{vehicle.model}}</span></p>
+        <p class="description">Car type: <span class="descriptionValue">{{ vehicle.type }}</span></p>
+        <p class="description">Make: <span class="descriptionValue">{{ vehicle.make }}</span></p>
+        <p class="description">Model: <span class="descriptionValue">{{ vehicle.model }}</span></p>
       </div>
     </v-card-text>
     <v-divider></v-divider>
     <v-card-actions class="flex justify-center">
-      <v-btn color="success">I wanna ride!</v-btn>
+      <v-btn @click="buttonClick" color="success">{{ buttonLabel }}</v-btn>
     </v-card-actions>
   </v-card>
 </template>
 
 <script lang="ts">
-  import {Component, Vue, Prop} from 'vue-property-decorator'
+  import {Component, Vue, Prop, Emit} from 'vue-property-decorator'
   import { IVehicle } from '@/models/vehicleTypes'
 
   @Component
   export default class Intro extends Vue {
 
-    @Prop({required: true})
-    public vehicle: IVehicle
+    @Prop({required: true}) readonly vehicle: IVehicle
+    @Prop({required: false, default: 'I wanna ride!'}) buttonLabel: string
+
+    @Emit('on-button-click')
+    buttonClick() {
+      return { vehicle: this.vehicle }
+    }
 
   }
 </script>

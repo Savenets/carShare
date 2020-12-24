@@ -6,7 +6,7 @@
       the terms etc. Once more friendly reminder administration of the site is not responsible for your deal with the owner. This is your responsibility to settle this all up
     </p>
     <v-row class="d-flex justify-space-between">
-      <VehicleCard v-for="vehicle in vehicle.vehicles" :key="vehicle.id" :vehicle="vehicle"/>
+      <VehicleCard v-for="vehicle in vehicle.vehicles" :key="vehicle.id" :vehicle="vehicle" @on-button-click="eventHandler" />
     </v-row>
     <v-col class="d-flex justify-center pa-8">
       <template v-if="page != 1">
@@ -34,6 +34,17 @@
         perPage: this.perPage,
         page: this.page
       })
+    },
+    methods: {
+      eventHandler(data) {
+        this.$router.push({
+          name: 'rentVehicle',
+          params: {
+            id: data.vehicle.id,
+            vehicle: data.vehicle
+          }
+        });
+      }
     },
     computed: {
       page() {
