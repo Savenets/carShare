@@ -31,6 +31,11 @@ export default new Router({
       component: () => import('../views/RentVehicle.vue')
     },
     {
+      path: '/shareVehicle',
+      name: 'shareVehicle',
+      component: () => import('../views/ShareVehicle.vue')
+    },
+    {
       path: '/dashboard',
       name: 'dashboard',
       component: () => import('../views/Dashboard.vue')
